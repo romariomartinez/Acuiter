@@ -11,10 +11,10 @@ const About = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-[#A1C935]/60 to-[#029CBF]/60 flex items-center">
         <div className="max-w-xl mx-10 p-10 bg-white/20 backdrop-blur-sm rounded-2xl shadow-lg">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
-            Creamos tecnología<br />
-            y proyectos en <br />
-            energía para salvar <br />
-            el planeta.
+            xxxxxxx<br />
+            xxxxxx <br />
+            xxxxxxxxx <br />
+            xxxxxxxxx
           </h2>
           <Link
             to="/projects"
