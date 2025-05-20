@@ -2,11 +2,10 @@ import React, { useEffect, useRef } from "react";
 import mapboxgl from "mapbox-gl";
 import 'mapbox-gl/dist/mapbox-gl.css';
 
-import logo2 from "../assets/Logo1.jpg"
-import fondo from "../assets/fondop.jpg"
+import logo2 from "../assets/Logo1.jpg";
+import fondo from "../assets/fondop.jpg";
 
 mapboxgl.accessToken = "pk.eyJ1Ijoicm9tYXJpb21hcnRpaW5leiIsImEiOiJjbWFwemgzM3AwMmlhMm1vZGFqaTNtYXU2In0.YwA4VTYEx9gNEM5aqsjQoA";
-
 
 const projects = [
   {
@@ -169,6 +168,7 @@ const projects = [
     coordinates: [-73.96667, 9.50000],
     image: logo2,
   }
+
 ];
 
 const Projects = () => {
@@ -212,9 +212,7 @@ const Projects = () => {
             <p style="margin: 0; font-size: 13px;">📍 ${project.city}</p>
             <p style="margin: 2px 0; font-size: 13px;">💧 Profundidad: ${project.depth}</p>
             <p style="margin: 2px 0 10px 0; font-size: 13px;">🧱 Terreno: ${project.terrain}</p>
-            <span style="background: ${
-              statusColor
-            }; color: white; padding: 3px 8px; font-size: 12px; border-radius: 20px;">
+            <span style="background: ${statusColor}; color: white; padding: 3px 8px; font-size: 12px; border-radius: 20px;">
               ${project.status}
             </span>
           </div>
@@ -236,59 +234,56 @@ const Projects = () => {
 
   return (
     <section
-  className="px-6 py-16 bg-cover bg-center bg-no-repeat"
-  style={{ backgroundImage: `url(${fondo})` }}
->
+      className="px-6 py-16 bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url(${fondo})` }}
+    >
+      <h2 className="text-4xl font-bold text-center text-[#065384] mb-10">
+        Nuestros Proyectos 
+      </h2>
 
-  <h2 className="text-4xl font-bold text-center text-[#065384] mb-10">
-    Nuestros Proyectos 
-  </h2>
-
-  <div className="max-w-7xl mx-auto bg-[#FFFFFF] rounded-2xl shadow-lg p-6 border" style={{ borderColor: "#E5E7EB" }}>
-    <div className="flex flex-col md:flex-row gap-6">
-
-      {/* Lista lateral */}
-      <div className="flex-1 max-h-[500px] overflow-y-auto space-y-4 pr-2">
-        {projects.map((p) => {
-          let statusColor = "";
-          if (p.status === "Operativo") {
-            statusColor = "#16A34A"; // verde
-          } else if (p.status === "Mantenimiento") {
-            statusColor = "#F59E0B"; // amarillo
-          } else {
-            statusColor = "#3B82F6"; // azul
-          }
-          return (
-            <div key={p.id} className="flex bg-[#FFFFFF] rounded-lg shadow border p-3 items-center gap-4" style={{ borderColor: "#E5E7EB" }}>
-              <img src={p.image} alt={p.title} className="w-20 h-20 object-contain" />
-              <div>
-                <h3 className="text-md font-semibold" style={{ color: "#065384" }}>
-                  {p.id} - {p.title}
-                </h3>
-                <p className="text-sm text-[#000000FF]">📍 {p.city}</p>
-                <p className="text-sm text-[#000000FF]">💧 Profundidad: {p.depth}</p>
-                <p className="text-sm text-[#000000FF]">🧱 Terreno: {p.terrain}</p>
-                <span
-                  className="inline-block mt-1 px-2 py-1 text-xs rounded-full text-white"
-                  style={{ backgroundColor: statusColor }}
+      <div className="max-w-7xl mx-auto bg-[#FFFFFF] rounded-2xl shadow-lg p-6 border" style={{ borderColor: "#E5E7EB" }}>
+        <div className="flex flex-col md:flex-row gap-6">
+          
+          {/* Lista lateral */}
+          <div className="flex-1 max-h-[500px] overflow-y-auto space-y-4 pr-2">
+            {projects.map((p) => {
+              let statusColor = "#16A34A";
+              return (
+                <a
+                  href={`/projects/${p.id}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  key={p.id}
+                  className="flex bg-[#FFFFFF] rounded-lg shadow border p-3 items-center gap-4 hover:bg-gray-50 transition"
+                  style={{ borderColor: "#E5E7EB" }}
                 >
-                  {p.status}
-                </span>
-              </div>
-            </div>
-          );
-        })}
+                  <img src={p.image} alt={p.title} className="w-20 h-20 object-contain" />
+                  <div>
+                    <h3 className="text-md font-semibold" style={{ color: "#065384" }}>
+                      {p.id} - {p.title}
+                    </h3>
+                    <p className="text-sm text-[#000000FF]">📍 {p.city}</p>
+                    <p className="text-sm text-[#000000FF]">💧 Profundidad: {p.depth}</p>
+                    <p className="text-sm text-[#000000FF]">🧱 Terreno: {p.terrain}</p>
+                    <span
+                      className="inline-block mt-1 px-2 py-1 text-xs rounded-full text-white"
+                      style={{ backgroundColor: statusColor }}
+                    >
+                      {p.status}
+                    </span>
+                  </div>
+                </a>
+              );
+            })}
+          </div>
+
+          {/* Mapa */}
+          <div className="flex-1 h-[500px] rounded-lg overflow-hidden shadow border" style={{ borderColor: "#E5E7EB" }}>
+            <div ref={mapContainer} className="w-full h-full" />
+          </div>
+        </div>
       </div>
-
-      {/* Mapa */}
-      <div className="flex-1 h-[500px] rounded-lg overflow-hidden shadow border" style={{ borderColor: "#E5E7EB" }}>
-        <div ref={mapContainer} className="w-full h-full" />
-      </div>
-
-    </div>
-  </div>
-</section>
-
+    </section>
   );
 };
 
