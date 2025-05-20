@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import hero from "../assets/home.jpg";
+import logo from "../assets/Logo.png"; // o el nombre real de tu imagen
+
 import Services from "./Services";
 import { Link as ScrollLink } from "react-scroll";
 import SatisfactionSection from "../components/SatisfactionSection";
@@ -27,9 +29,11 @@ const Home = () => {
   <p className="text-sm uppercase tracking-widest text-black mb-2 text-center">
     Exploramos el agua del futuro 💧
   </p>
-  <h1 className="text-4xl md:text-6xl font-extrabold mb-4 text-center text-[#065384] drop-shadow-md">
-    Hidrogeol S.A.S
-  </h1>
+  <img
+  src={logo}
+  alt="ACUITER"
+  className="mx-auto mb-4 w-60 md:w-80 drop-shadow-md"
+/>
   <p className="text-lg text-[#000607FF] mb-6 text-center">
     Empresa especializada en la exploración de aguas subterráneas
   </p>
