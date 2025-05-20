@@ -7,19 +7,18 @@ const AboutExperience = () => {
     <section className="bg-[#D1E4E7A2] py-20 px-6">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
         {/* 📷 Imágenes */}
-        <div className="relative w-full md:w-1/2 flex justify-center">
-<img
-  src={equipoImg}
-  alt="Equipo"
-  className="w-64 rounded-xl shadow-lg"
-/>
-          <img
-  src={equipoImg1}
-  alt="Equipo"
-  className="w-64 rounded-xl shadow-lg"
-/>
-            
-        </div>
+<div className="w-full md:w-1/2 flex flex-col sm:flex-row justify-center items-center gap-4">
+  <img
+    src={equipoImg}
+    alt="Equipo"
+    className="w-full sm:w-64 rounded-xl shadow-lg object-cover max-w-xs"
+  />
+  <img
+    src={equipoImg1}
+    alt="Equipo"
+    className="w-full sm:w-64 rounded-xl shadow-lg object-cover max-w-xs"
+  />
+</div>
 
         {/* 📄 Texto + datos */}
         <div className="w-full md:w-1/2">
