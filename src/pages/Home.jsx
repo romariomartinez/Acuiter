@@ -26,9 +26,7 @@ const Home = () => {
   animate={{ opacity: 1, x: 0 }}
   transition={{ duration: 3 }}
 >
-  <p className="text-sm uppercase tracking-widest text-black mb-2 text-center">
-    Exploramos el agua del futuro 💧
-  </p>
+  
   <img
   src={logo}
   alt="ACUITER"

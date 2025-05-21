@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import { motion } from "framer-motion";
-import logo from "../assets/Logo.png"; // usa tu logo real
 
 const SplashScreen = ({ onComplete }) => {
   useEffect(() => {
@@ -11,15 +10,16 @@ const SplashScreen = ({ onComplete }) => {
 
   return (
     <div className="flex justify-center items-center h-screen bg-[#FFFFFFFF]">
-      <motion.img
-        src={logo}
-        alt="Acuiter Logo"
-        className="w-[500px] h-[500px] object-contain"
-
-
+      <motion.video
+        src="/videos/Acuiter.mov"
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="w-[500px] h-[500px] object-contain rounded-xl shadow-lg"
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
-        transition={{ type: "spring", duration: 3.5, bounce: 0.5 }}
+        transition={{ type: "spring", duration: 10.5, bounce: 0.5 }}
       />
     </div>
   );
@@ -30,4 +30,3 @@ SplashScreen.propTypes = {
 };
 
 export default SplashScreen;
-
