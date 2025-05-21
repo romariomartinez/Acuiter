@@ -24,9 +24,9 @@ const SatisfactionSection = () => {
           icon: <FaThumbsUp />,
           title: "Resultados Confiables\ny Puntualidad",
           text: "Cumplimos los tiempos de entrega y garantizamos el funcionamiento hidráulico."
-        }].map((item, i) => (
+        }].map((item) => (
           <div
-            key={i}
+            key={item.title}
             className="bg-white rounded-2xl shadow-lg p-6 sm:p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
           >
             <div className="text-5xl text-sky-500 mb-4">{item.icon}</div>

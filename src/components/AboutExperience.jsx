@@ -39,13 +39,13 @@ const AboutExperience = () => {
             </div>
             <div>
               <p className="text-2xl font-bold text-[#25C0DA]">
-                <CountUp end={50} duration={3} />+
+                <CountUp end={300} duration={3} />+
               </p>
               <p className="text-sm font-semibold text-gray-800">Clientes Satisfechos</p>
             </div>
             <div>
               <p className="text-2xl font-bold text-[#25C0DA]">
-                <CountUp end={30} duration={3} />+
+                <CountUp end={300} duration={3} />+
               </p>
               <p className="text-sm font-semibold text-gray-800">Proyectos Exitosos</p>
             </div>
