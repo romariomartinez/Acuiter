@@ -1,11 +1,13 @@
 import React from "react";
 import CountUp from "react-countup";
-import equipoImg from "../assets/equipo1.jpg";
-import equipoImg1 from "../assets/equipo2.jpg";
-
+import equipoImg from "../assets/IMG_0437.jpg";
+import equipoImg1 from "../assets/chorro.jpg";
+import { Link } from "react-router-dom";
 const AboutExperience = () => {
   return (
-    <section className="bg-[#D1E4E7A2] py-20 px-4 sm:px-6">
+    <section
+  className="py-20 px-4 sm:px-6 bg-gradient-to-r from-[#FFFFFFFF]  to-[#FFFFFFFF]"
+>
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
         {/* 📷 Imágenes */}
         <div className="w-full md:w-1/2 flex flex-col sm:flex-row justify-center items-center gap-4">
@@ -52,10 +54,12 @@ const AboutExperience = () => {
           </div>
 
           <div className="flex justify-center md:justify-start">
-            <button className="bg-[#029CBF] text-white px-6 py-3 rounded shadow hover:bg-[#027ea3] transition">
-              Contáctenos
-            </button>
-          </div>
+  <Link to="/contact">
+    <button className="bg-[#029CBF] text-white px-6 py-3 rounded shadow hover:bg-[#027ea3] transition">
+      Contáctenos
+    </button>
+  </Link>
+</div>
         </div>
       </div>
     </section>

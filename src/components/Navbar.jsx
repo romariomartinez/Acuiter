@@ -1,8 +1,7 @@
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import logo from "../assets/Logo.png"; // asegúrate de tener esta imagen
+import logo from "../assets/Logo.png"; // asegúrate de tener esta imagen en src/assets
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,12 +9,12 @@ const Navbar = () => {
   return (
     <header className="bg-white shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Logo */}
+        {/* Logo con redirección al Home */}
         <Link to="/">
           <img
             src={logo}
             alt="ACUITER Logo"
-            className="w-28 h-auto object-contain"
+            className="w-28 h-auto object-contain hover:scale-105 transition-transform duration-200 cursor-pointer"
           />
         </Link>
 

@@ -3,7 +3,7 @@ import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebase/config";
-import fondo from "../assets/fondop.jpg";
+import fondo from "../assets/fondo3.jpg";
 import defaultImage from "../assets/Logo1.jpg";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -99,18 +99,18 @@ const Projects = () => {
     } else {
       console.warn("No hay coordenadas válidas para ajustar el mapa.");
     }
-  }, [projects]);
+  }, [projects, navigate]);
 
   return (
     <section
-      className="px-6 py-16 bg-cover bg-center bg-no-repeat"
+      className="px-9 py-8 bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${fondo})` }}
     >
-      <h2 className="text-4xl font-bold text-center text-[#065384] mb-10">
+      <h2 className="text-4xl font-bold text-center text-[#25C0DA] mb-10">
         Nuestros Proyectos
       </h2>
 
-      <div className="max-w-7xl mx-auto bg-white rounded-2xl shadow-lg p-6 border border-gray-200">
+      <div className="max-w-7xl mx-auto bg-white rounded-2xl shadow-lg p-5 border border-gray-300">
         <div className="flex flex-col md:flex-row gap-6">
           <div className="flex-1 max-h-[500px] overflow-y-auto space-y-4 pr-2">
             {projects.map((p) => (

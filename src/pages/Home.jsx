@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import hero from "../assets/home.jpg";
+import hero from "../assets/chorro.jpg";
 import logo from "../assets/Logo.png"; // o el nombre real de tu imagen
 
 import Services from "./Services";
@@ -17,14 +17,14 @@ const Home = () => {
   style={{ backgroundImage: `url(${hero})` }}
 >
   {/* Fondo general translúcido para oscurecer un poco la imagen */}
-  <div className="absolute inset-0 bg-white bg-opacity-30"></div>
+  <div className="absolute inset-0 bg-white bg-opacity-5"></div>
 
   {/* Contenedor izquierdo más grande con degradado azul Acuiter */}
   <motion.div
   className="relative z-10 text-left text-black max-w-2xl w-full bg-gradient-to-r from-[#87C4CBFF]/50 to-[#F2F5F6]/60 p-10 rounded-2xl shadow-xl"
   initial={{ opacity: 0, x: -40 }}
   animate={{ opacity: 1, x: 0 }}
-  transition={{ duration: 3 }}
+  transition={{ duration: 2 }}
 >
   
   <img
