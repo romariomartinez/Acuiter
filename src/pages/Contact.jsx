@@ -20,7 +20,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="bg-white py-20 px-4 md:px-6 text-gray-800" id="contacto">
+    <section className="bg-white py-32 px-4 md:px-6 text-gray-800" id="contacto">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
         {/* Información de contacto */}
         <div>

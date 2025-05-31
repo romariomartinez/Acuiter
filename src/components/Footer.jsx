@@ -10,7 +10,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-[#FDFFFFFF] to-[#6E7070] text-white px-4 sm:px-6 py-10 text-sm">
+    <footer className="bg-gradient-to-b from-[#FDFFFFFF] to-[#83858596] text-white px-4 sm:px-6 py-10 text-sm">
 
       <div className="max-w-7xl mx-auto space-y-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">

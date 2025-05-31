@@ -3,7 +3,7 @@ import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebase/config";
-import fondo from "../assets/fondo3.jpg";
+
 import defaultImage from "../assets/Logo1.jpg";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -103,10 +103,10 @@ const Projects = () => {
 
   return (
     <section
-      className="px-9 py-8 bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: `url(${fondo})` }}
+      className="bg-gradient-to-b from-[#FDFFFFFF] to-[#b8bbbb] text-white px-4 sm:px-6 py-10 text-sm"
+      //style={{ backgroundImage: `url(${fondo})` }}
     >
-      <h2 className="text-4xl font-bold text-center text-[#25C0DA] mb-10">
+      <h2 className="text-4xl font-bold text-center text-[#065384] mb-10">
         Nuestros Proyectos
       </h2>
 

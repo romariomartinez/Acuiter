@@ -5,7 +5,7 @@ import imagen1 from "../assets/equipo1.jpg";
 import imagen2 from "../assets/equipo2.jpg";
 import imagen3 from "../assets/IMG_5010.jpg";
 import imagen4 from "../assets/IMG_5057.jpg";
-import fondo from "../assets/fondo2.jpg";
+
 
 
 
@@ -57,12 +57,12 @@ const Nosotros = () => {
 
  return (
   <section
-    className="relative py-10 px-4 md:px-5 bg-Tleft-top bg-center bg-no-repeat"
-    style={{ backgroundImage: `url(${fondo})`}} 
+   className="py-20 px-4 sm:px-6 md:px-10 bg-gradient-to-r from-[#065484bc]  to-[#25bfda]"
+    
   >
     <div
       className="p-6 md:p-10 rounded-xl shadow-lg max-w-7xl mx-auto text-center mb-16"
-      style={{ backgroundColor: '#F9F9FA5C' }} // bg-white/80
+      style={{ backgroundColor: '#F9F9FA00' }} // bg-white/80
     >
       <motion.h2
         className="text-4xl md:text-5xl font-bold mb-4"
@@ -70,7 +70,7 @@ const Nosotros = () => {
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeInUp}
-        style={{ color: '#065384' }} // text-gray-900 default heading color
+        style={{ color: '#F7F7F8FF' }} // text-gray-900 default heading color
       >
         Creamos soluciones sostenibles
       </motion.h2>
@@ -92,7 +92,7 @@ const Nosotros = () => {
         className={`rounded-xl shadow-md max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center mb-20 p-6 ${
           section.posicionTexto === "izquierda" ? "md:flex-row-reverse" : ""
         }`}
-        style={{ backgroundColor: '#F2F3F67C' }} // bg-white/90
+        style={{ backgroundColor: '#F2F3F600' }} // bg-white/90
       >
         {section.posicionTexto === "izquierda" ? (
           <>
@@ -104,13 +104,13 @@ const Nosotros = () => {
             >
               <h3
                 className="text-4xl font-semibold mb-9"
-                style={{ color: '#065384' }} // dark heading
+                style={{ color: '##065384' }} // dark heading
               >
                 {section.titulo}
               </h3>
               <p
                 className="text-lg"
-                style={{ color: '#000000FF' }} // text-gray-700
+                style={{ color: '#FFFFFFFF' }} // text-gray-700
               >
                 {section.texto}
               </p>
@@ -144,13 +144,13 @@ const Nosotros = () => {
             >
               <h3
                 className="text-4xl font-semibold mb-4"
-                style={{ color: '#065384' }} // dark heading
+                style={{ color: '##065384' }} // dark heading
               >
                 {section.titulo}
               </h3>
               <p
                 className="text-lg"
-                style={{ color: '#000000FF' }} // text-gray-700
+                style={{ color: '#FFFFFFFF' }} // text-gray-700
               >
                 {section.texto}
               </p>
