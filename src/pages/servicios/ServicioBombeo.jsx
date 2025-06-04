@@ -3,7 +3,7 @@ import { FaPumpSoap } from "react-icons/fa";
 
 const ServicioBombeo = () => {
   return (
-    <section className="min-h-screen bg-white px-6 py-16">
+    <section className="pt-32 pb-20 px-6 min-h-screen bg-white">
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center gap-4 mb-6">
           <FaPumpSoap className="text-4xl text-[#029CBF]" />

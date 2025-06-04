@@ -4,7 +4,7 @@ import { FaAward, FaDollarSign, FaThumbsUp } from "react-icons/fa";
 const SatisfactionSection = () => {
   return (
     <section
-      className="py-14 px-4 sm:px-6 md:px-10 text-center bg-gradient-to-b from-[#FFFFFFFF] to-[#065384]"
+      className="py-14 px-4 sm:px-6 md:px-10 text-center bg-gradient-to-b from-[#FFFFFFFF] to-[#757879]"
     >
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1F2937] mb-10">
         Tu <span className="text-[#25c0da]">satisfacción</span> es nuestra prioridad

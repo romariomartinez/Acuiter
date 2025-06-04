@@ -3,13 +3,17 @@ import { FaWater } from "react-icons/fa";
 
 const ServicioPozos = () => {
   return (
-    <section className="min-h-screen bg-white px-6 py-16">
+    <section className="pt-32 pb-20 px-6 min-h-screen bg-white">
       <div className="max-w-4xl mx-auto">
+        {/* Título con ícono */}
         <div className="flex items-center gap-4 mb-6">
           <FaWater className="text-4xl text-[#029CBF]" />
-          <h1 className="text-3xl font-bold text-[#065384]">Perforación de Pozos</h1>
+          <h1 className="text-3xl md:text-4xl font-bold text-[#065384]">
+            Perforación de Pozos
+          </h1>
         </div>
 
+        {/* Párrafos descriptivos */}
         <p className="text-gray-700 leading-relaxed mb-4">
           Nuestra empresa cuenta con amplia experiencia en la perforación de pozos profundos y semiprofundos. Adaptamos cada proyecto al tipo de terreno y necesidades específicas de nuestros clientes, asegurando la sostenibilidad y calidad del suministro de agua.
         </p>

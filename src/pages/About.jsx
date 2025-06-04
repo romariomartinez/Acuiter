@@ -6,11 +6,6 @@ import imagen2 from "../assets/equipo2.jpg";
 import imagen3 from "../assets/IMG_5010.jpg";
 import imagen4 from "../assets/IMG_5057.jpg";
 
-
-
-
-
-
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
@@ -57,12 +52,12 @@ const Nosotros = () => {
 
  return (
   <section
-   className="py-20 px-4 sm:px-6 md:px-10 bg-gradient-to-r from-[#065484bc]  to-[#25bfda]"
+   className="py-20 px-4 sm:px-6 md:px-10 bg-gradient-to-r from-[#fafafabc]  to-[#bbbcbc]"
     
   >
     <div
       className="p-6 md:p-10 rounded-xl shadow-lg max-w-7xl mx-auto text-center mb-16"
-      style={{ backgroundColor: '#F9F9FA00' }} // bg-white/80
+      style={{ backgroundColor: '#F9F9FA5E' }} // bg-white/80
     >
       <motion.h2
         className="text-4xl md:text-5xl font-bold mb-4"
@@ -70,7 +65,7 @@ const Nosotros = () => {
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeInUp}
-        style={{ color: '#F7F7F8FF' }} // text-gray-900 default heading color
+        style={{ color: '#065384' }} // text-gray-900 default heading color
       >
         Creamos soluciones sostenibles
       </motion.h2>
@@ -104,13 +99,13 @@ const Nosotros = () => {
             >
               <h3
                 className="text-4xl font-semibold mb-9"
-                style={{ color: '##065384' }} // dark heading
+                style={{ color: '##000000FF' }} // dark heading
               >
                 {section.titulo}
               </h3>
               <p
                 className="text-lg"
-                style={{ color: '#FFFFFFFF' }} // text-gray-700
+                style={{ color: '#000000FF' }} // text-gray-700
               >
                 {section.texto}
               </p>
@@ -144,13 +139,13 @@ const Nosotros = () => {
             >
               <h3
                 className="text-4xl font-semibold mb-4"
-                style={{ color: '##065384' }} // dark heading
+                style={{ color: '##000000FF' }} // dark heading
               >
                 {section.titulo}
               </h3>
               <p
                 className="text-lg"
-                style={{ color: '#FFFFFFFF' }} // text-gray-700
+                style={{ color: '#000000FF' }} // text-gray-700
               >
                 {section.texto}
               </p>
